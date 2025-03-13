@@ -62,7 +62,6 @@ html {
   }
 
   .text1{
-    height: 30rem;
     margin-top: 2rem;
     font-family: "Gimbal-Extended";
     font-weight: bold;
@@ -71,7 +70,7 @@ html {
     font-size: 1.4rem;
     background-color: var(--clr-dark-green);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: 0.5rem 0.5rem 1rem var(--clr-text-shadow);
     position: relative;
   }
@@ -88,7 +87,7 @@ html {
     font-size: 4rem;
     font-weight: 100;
     position: absolute;
-    right: 15rem;
+    right: 20rem;
     top: 7rem;
     animation: arrow .5s ease-in 0s infinite alternate;
   }
