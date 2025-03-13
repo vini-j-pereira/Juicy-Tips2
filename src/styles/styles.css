@@ -136,7 +136,7 @@
     .container{
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 20%;
         overflow: auto;
         height: 100vh;
@@ -172,7 +172,6 @@
         border-radius: 20px;
         margin-bottom: 0;
         box-shadow:5px 8px 8px #397049 ;
-        margin-top: -20px !important;
     }
 
     .text1 p{
