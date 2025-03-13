@@ -51,7 +51,26 @@ html {
   }
 
   .text1{
-    margin-top: 1rem;
+    margin-top: 2rem;
+    font-family: "Gimbal-Extended";
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: var(--clr-dark-green);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem var(--clr-text-shadow);
+  }
+
+  .text1 p{
+    text-shadow: 0.5rem 0.5rem 1rem var(--clr-text-shadow);
+    line-height: 2rem;
+    color: var(--clr-white);
+  }
+
+  .text2{
+    display: none;
   }
 
   .imgFone{
