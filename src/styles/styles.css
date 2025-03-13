@@ -87,7 +87,7 @@ html {
     font-size: 4rem;
     font-weight: 100;
     position: absolute;
-    right: 18rem;
+    right: 17rem;
     top: 7rem;
     animation: arrow .5s ease-in 0s infinite alternate;
   }
@@ -107,7 +107,7 @@ html {
   }
   .imgFone img{
     width: 36rem;
-    margin-top: -30rem;
+    margin-top: -50rem;
   }
 
   .btnFone{
