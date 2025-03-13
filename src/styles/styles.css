@@ -41,7 +41,7 @@ html {
         top: 7rem;
     }
     to{
-        top: 12rem;
+        top: 11rem;
     }
   }
 
@@ -89,7 +89,7 @@ html {
     position: absolute;
     right: 17rem;
     top: 7rem;
-    animation: arrow .5s ease-in 0s infinite alternate;
+    animation: arrow .7s ease-in 0s infinite alternate;
   }
 
   .text2{
@@ -107,7 +107,7 @@ html {
   }
   .imgFone img{
     width: 36rem;
-    margin-top: -73rem;
+    margin-top: -72rem;
   }
 
   .btnFone{
