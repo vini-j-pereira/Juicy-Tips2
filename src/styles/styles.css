@@ -161,7 +161,6 @@
 
     .text1{
         width: 300px;
-        margin-top: 10px !important;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -171,9 +170,13 @@
         background-color: #308348;
         padding: 10px;
         border-radius: 20px;
+        margin-bottom: 0;
     }
 
     .text1 p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 100%;
         margin-top: 10px !important;
         background-image: none;
