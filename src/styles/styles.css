@@ -62,6 +62,7 @@ html {
   }
 
   .text1{
+    height: 50rem;
     margin-top: 2rem;
     font-family: "Gimbal-Extended";
     font-weight: bold;
@@ -87,6 +88,7 @@ html {
     font-size: 4rem;
     font-weight: 100;
     position: absolute;
+    right: 12rem;
     top: 7rem;
     animation: arrow .5s ease-in 0s infinite alternate;
   }
@@ -106,7 +108,7 @@ html {
   }
   .imgFone img{
     width: 36rem;
-    margin-top: -8rem;
+    margin-top: -11rem;
   }
 
   .btnFone{
