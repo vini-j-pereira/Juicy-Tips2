@@ -48,6 +48,8 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .text1{
@@ -61,6 +63,7 @@ html {
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem var(--clr-text-shadow);
+    margin-bottom: 2rem;
   }
 
   .text1 p{
@@ -80,6 +83,7 @@ html {
     align-items: center;
     justify-content: center;
     position: relative;
+    
   }
   .imgFone img{
     width: 32rem;
