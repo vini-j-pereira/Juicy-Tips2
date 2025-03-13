@@ -36,6 +36,15 @@ html {
     }
   }
 
+  @keyframes arrow{
+    from {
+        top: 7rem;
+    }
+    to{
+        top: 10rem;
+    }
+  }
+
   body{
     background-image: url(../assets/Home.png);
     background-size: cover;
@@ -63,18 +72,23 @@ html {
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem var(--clr-text-shadow);
+    position: relative;
   }
 
   .text1 p{
     text-shadow: 0.5rem 0.5rem 1rem var(--clr-text-shadow);
     line-height: 2rem;
     color: var(--clr-white);
+    
   }
 
   .text1 i{
     color: var(--clr-white);
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 100;
+    position: absolute;
+    top: 7rem;
+    animation: arrow .5s ease-in 0s infinite alternate;
   }
 
   .text2{
@@ -92,7 +106,7 @@ html {
   }
   .imgFone img{
     width: 36rem;
-    margin-top: -3rem;
+    margin-top: -8rem;
   }
 
   .btnFone{
