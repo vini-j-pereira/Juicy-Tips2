@@ -63,7 +63,7 @@ html {
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem var(--clr-text-shadow);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .text1 p{
