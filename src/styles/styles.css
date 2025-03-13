@@ -9,99 +9,26 @@
     src: url('../fonts/Gimbal\ Extended\ Regular.otf') format('truetype'),
 }
 
-.container{
-    height: 100vh;
-    background-image: url(../assets/Home.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
+:root {
+
+    --clr-white: #fafafa;
+    --clr-dark: #161616;
+    --clr-light-green: #a2ffbc;
+    --clr-dark-green: #50cb73;
+    --clr-shadow-green: #308348;
+    --clr-text-shadow: #173b21;
+
+    --spacing: 0.25rem;
 }
 
-
-
-.text1 p{
-    height: 550px;
-    background-image: url(../assets/chat.png);
-    background-repeat: no-repeat;
-    background-position: initial;
-    background-size: contain;
-    font-family:'Gimbal-Extended';
-    width: 380px;
-    margin-top: 100px;
-    color: #fafafa;
-    text-shadow: 5px 8px 8px #308348;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 25px;
-    padding-left: 20px;
-    line-height: 1.4;
-    margin-left: -200px;
-}
-
-.text2{
-    width: 220px;
-}
-
-.text2 span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family:'Gimbal-Extended';
-    margin-top: -200px;
-    margin-left: 80px;
-    width: 280px;
-    color: #161616;
-    font-weight: bold;
-}
-
-.text2 span i{
-    font-size: 35px;
-    margin-left: 20px;
-}
-
-.imgFone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: -500px;
-}
-
-.imgFone img{
-    width: 300px;
-    margin-top: -50px;
-}
-
-.btnFone {
-    font-family: "Rajdhani", sans-serif;
-    border: none;
-    padding: 10px;
-    margin-top: -125px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #a2ffbc;
-    color: #161616;
-    transition: .3s ease-in-out;
-    animation: pulsar 1.5s infinite ease-in-out;
-    transform-origin: center; 
-    box-sizing: border-box;  
-    will-change: transform;
-    cursor: pointer;
-}
-
-.btnFone:hover{
-    background-color: #161616;
-    color: #a2ffbc;
+html {
+    font-size: 62.5%;
 }
 
 @keyframes pulsar {
     0%, 100% {
       transform: scale(1);
-      box-shadow: 0 0 10px #ececec;
+      box-shadow: 0 0 10px var(--clr-dark-green);
     }
     50% {
       transform: scale(1.02);
@@ -109,93 +36,56 @@
     }
   }
 
-  .textFone2{
-    display: none;
+  body{
+    background-image: url(../assets/Home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
 
-  /* Resp */
-
-  @media ( width <= 1325px){
-
-    .text2 {
-        margin-left: -210px !important; 
-    }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  @media ( width <= 1000px){
-
-    .imgFone{
-        margin-left: -450px;
-        margin-right: -200px;
-    }
-
+  .text1{
+    margin-top: 1rem;
   }
 
-  @media ( width <= 725px){
-
-    .container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        overflow: auto;
-        height: 100vh;
-    }
-
-    .text2{
-        display: none;
-    }
-
-    .imgFone{
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 0;
-    }
-
-    .imgFone img{
-        margin-top: -800px;
-        width: 280px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .text1{
-        width: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0;
-        margin-right: 0;
-        height: 15%;
-        background-color: #308348;
-        padding: 10px;
-        border-radius: 20px;
-        margin-bottom: 0;
-        box-shadow:5px 8px 8px #397049 ;
-    }
-
-    .text1 p{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        margin-top: 0px !important;
-        background-image: none;
-        font-size: 14px;
-        width: 250px;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0;
-        text-shadow: 5px 8px 8px #173b21;
-        line-height: 1.6;
-    }
-
-    .btnFone {
-        border: none;
-        padding: 10px;
-        margin-top: -200px;
-        border-radius: 10px;
-        font-size: 13px;
-        font-weight: bold;
-    }
-
+  .imgFone{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -1rem;
   }
+  .imgFone img{
+    width: 32rem;
+  }
+
+  .btnFone{
+    position: absolute;
+    bottom: 10rem;
+    border: none;
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: var(--clr-light-green);
+    color: var(--clr-dark);
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: .2s ease-in;
+    animation: pulsar 1.5s infinite ease-in-out;
+    transform-origin: center;
+    box-sizing: border-box;  
+    will-change: transform;  
+  }
+
+  .btnFone:hover{
+    background-color: var(--clr-dark);
+    color: var(--clr-light-green);
+  }
+
