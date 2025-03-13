@@ -152,7 +152,7 @@
     }
 
     .imgFone img{
-        margin-top: -100px;
+        margin-top: -800px;
         width: 280px;
         margin-left: 0;
         margin-right: 0;
@@ -192,7 +192,7 @@
     .btnFone {
         border: none;
         padding: 10px;
-        margin-top: -100px;
+        margin-top: -200px;
         border-radius: 10px;
         font-size: 13px;
         font-weight: bold;
