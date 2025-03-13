@@ -71,6 +71,12 @@ html {
     color: var(--clr-white);
   }
 
+  .text1 i{
+    color: var(--clr-white);
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
   .text2{
     display: none;
   }
@@ -85,7 +91,7 @@ html {
     
   }
   .imgFone img{
-    width: 32rem;
+    width: 34rem;
     margin-top: -1rem;
   }
 
