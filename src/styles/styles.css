@@ -87,6 +87,7 @@ html {
   }
   .imgFone img{
     width: 32rem;
+    margin-top: -1rem;
   }
 
   .btnFone{
